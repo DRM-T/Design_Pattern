@@ -9,6 +9,7 @@ public class Person extends AbstractComposite {
     private Gender gender;
     private List<Person> children;
 
+    /**yaya.*/
     public Person(String name, Date birthDate, Gender gender) {
         this.name = name;
         this.birthDate = birthDate;
@@ -16,38 +17,47 @@ public class Person extends AbstractComposite {
         this.children = new ArrayList<>();
     }
 
+    /**yaya.*/
     public String getName() {
         return name;
     }
 
+    /**yaya.*/
     public void setName(String name) {
         this.name = name;
     }
 
+    /**yaya.*/
     public Date getBirthDate() {
         return birthDate;
     }
 
+    /**yaya.*/
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
+    /**yaya.*/
     public Gender getGender() {
         return gender;
     }
 
+    /**yaya.*/
     public void setGender(Gender gender) {
         this.gender = gender;
     }
 
+    /**yaya.*/
     public List<Person> getChildren() {
         return children;
     }
 
+    /**yaya.*/
     public void addChild(Person child) {
         this.children.add(child);
     }
 
+    /**yaya.*/
     @Override
     public void print() {
         System.out.println(this.name);
@@ -56,6 +66,7 @@ public class Person extends AbstractComposite {
         }
     }
 
+    /**yaya.*/
     public List<Person> findUnmarriedPeople() {
         List<Person> unmarriedPeople = new ArrayList<>();
         for (Person person : this.children) {
@@ -69,6 +80,7 @@ public class Person extends AbstractComposite {
         return unmarriedPeople;
     }
 
+    /**yaya.*/
     public List<Couple> findCouplesWithTwoChildren() {
         List<Couple> couplesWithTwoChildren = new ArrayList<>();
         for (Person person : this.children) {
