@@ -3,6 +3,7 @@ package DesignPatern.Bai1;
 import java.util.Collections;
 import java.util.List;
 
+/**yaya.*/
 public abstract class AbstractComposite implements Composite {
     @Override
     public boolean isGroup() {
